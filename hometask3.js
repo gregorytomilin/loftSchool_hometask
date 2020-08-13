@@ -18,7 +18,7 @@ function getVowels(string) {
     return vowelsFromString;
 }
 
-console.log(getVowels(string));
+console.log(`Гласные в фразе "${string}" : "${getVowels(string)}"`);
 
 
 
@@ -45,7 +45,7 @@ function getWorthyWorkers(workersArray) {
 }
 
 
-console.log(getWorthyWorkers(workers))
+console.log(`Самые успешные работники : ${getWorthyWorkers(workers)}`)
 
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -65,7 +65,7 @@ function isHtml(somePath) {
     }
 }
 
-console.log(isHtml(path))
+console.log(`Расширение файла "${path}" html? : ${isHtml(path)}`)
 
 
 //   #1 Фильтрация массива
@@ -82,8 +82,6 @@ const isEven = num => {
     }
 };
 
-console.log(isEven(3))
-
 function filterArray(someNumArray, someCheckingFunc) {
     let evenNumsArray = [];
     someNumArray.forEach(numOfArray => {
@@ -95,7 +93,7 @@ function filterArray(someNumArray, someCheckingFunc) {
     return evenNumsArray
 }
 
-console.log(filterArray(mixedArray, isEven));
+console.log(`Только чётные цифры массива [${mixedArray}] : [${filterArray(mixedArray, isEven)}]`);
 
 
 
@@ -167,7 +165,8 @@ openBtn.addEventListener('click', ()=>{
             overlayBlock.style.visibility = 'hidden';
             overlayBlock.style.opacity = '0';
             overlayBlock.removeChild(child);
-            this.removeEventListener('click', removeChild)
+            overlayBlock.removeEventListener('click', removeChild)
+
     }
 
 

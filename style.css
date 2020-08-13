@@ -83,6 +83,12 @@ a:hover{
     border-radius: 5px;
     padding: 10px 18px;
     outline: none;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+.open_Btn:hover{
+    box-shadow:3px 3px 4px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow:3px 3px 4px rgba(0, 0, 0, 0.29);
 }
 
 .overlay-section {
